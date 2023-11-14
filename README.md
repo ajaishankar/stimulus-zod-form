@@ -1,3 +1,6 @@
+[![version(scoped)](https://img.shields.io/npm/v/stimulus-zod-form.svg)](https://www.npmjs.com/package/stimulus-zod-form)
+[![codecov](https://codecov.io/gh/ajaishankar/stimulus-zod-form/graph/badge.svg?token=EEP6XUWJ0Z)](https://codecov.io/gh/ajaishankar/stimulus-zod-form)
+
 # Stimulus Zod Form
 
 ### Stimulus Zod Validated Form
