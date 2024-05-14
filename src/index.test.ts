@@ -40,7 +40,7 @@ function field(name: string, value?: string) {
     <div data-controller="field" class="form-field">
       <input data-testId="${name}" name="${name}" value="${value ?? ""}"
         data-field-target="input"
-        data-action="blur->field#setTouched blur->form#validate" />
+        data-action="blur->field#validate" />
       <div data-testid="${name}-error" data-field-target="error"></div>
     </div>
   `;

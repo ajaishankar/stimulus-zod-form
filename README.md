@@ -44,7 +44,7 @@ Let the controllers spring to life!
   <div data-controller="field" class="form-field">
    <input name="addresses[0].city"
      data-field-target="input"
-     data-action="blur->field#setTouched blur->form#validate" />
+     data-action="blur->field#validate" />
    <div data-field-target="error"></div>
   </div>
 </form>
@@ -56,7 +56,7 @@ In the sample code above note the following
 
 * Form field outlets `data-form-field-outlet`
 * Form validate on submit `data-action="form#submit"`
-* Field validate on blur `data-action="blur->field#setTouched blur->form#validate"`
+* Field validate on blur `data-action="blur->field#validate"`
 * Field input target `data-field-target="input"`
 * Field error target `data-field-target="error"`
 * Form error target ` data-form-target="error"`

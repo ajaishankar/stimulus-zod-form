@@ -1,6 +1,6 @@
 {
   "name": "stimulus-zod-form",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Stimulus Zod validated form",
   "repository": {
     "type": "git",

@@ -60,6 +60,7 @@ class ZodFormController<Schema extends ZodType> extends Controller<HTMLFormEleme
     const name = field.getName();
     if (name) {
       this.fields.set(getPath(name), field);
+      field.setValidator(this);
     }
   }
 
@@ -67,6 +68,7 @@ class ZodFormController<Schema extends ZodType> extends Controller<HTMLFormEleme
     const name = field.getName();
     if (name) {
       this.fields.delete(getPath(name));
+      field.setValidator(undefined);
     }
   }
 
@@ -156,7 +158,7 @@ type FormControllerConstructor<S extends ZodType> = new (context: Context) => Zo
  *   <div data-controller="field" class="form-field">
  *    <input name="addresses[0].city"
  *      data-field-target="input"
- *      data-action="blur->field#setTouched blur->form#validate" />
+ *      data-action="blur->field#validate" />
  *    <div data-field-target="error"></div>
  *   </div>
  * </form>
